@@ -18,16 +18,97 @@ body {
   }
 }
 
-.button-container {
-  @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+@layer components {
+  .transition-theme {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+
+  /* Button Directives */
+  .btn-primary {
+    @apply bg-green dark:bg-dark-accent-green
+           shadow-lg px-8 p-4 rounded-full
+           transition-all duration-300 ease-in-out
+           hover:shadow-xl hover:scale-105
+           active:scale-95 active:shadow-md
+           hover:-translate-y-0.5
+           relative
+           before:absolute before:inset-0
+           before:rounded-full before:bg-white
+           before:opacity-0 before:transition-opacity
+           hover:before:opacity-20;
+  }
+
+  .btn-secondary {
+    @apply bg-blue dark:bg-dark-accent-blue
+           shadow-lg px-8 p-4 rounded-full
+           transition-all duration-300 ease-in-out
+           hover:shadow-xl hover:scale-105
+           active:scale-95 active:shadow-md
+           hover:-translate-y-0.5
+           relative
+           before:absolute before:inset-0
+           before:rounded-full before:bg-white
+           before:opacity-0 before:transition-opacity
+           hover:before:opacity-20;
+  }
+
+  .button-container {
+    @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto text-center px-10;
+  }
+
+  .section-paragraph {
+    @apply mx-auto text-center leading-9 max-w-3xl text-xl text-gray;
+  }
 }
 
-.section-container {
-  @apply max-w-6xl mx-auto text-center px-10;
+/* Custom animation keyframes */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  }
 }
 
-.section-paragraph {
-  @apply mx-auto text-center leading-9 max-w-3xl text-xl text-gray;
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Hover effect utilities */
+@layer utilities {
+  .btn-hover-effect {
+    @apply relative overflow-hidden
+           after:absolute after:inset-0
+           after:rounded-full after:opacity-0
+           after:transition-opacity after:duration-300
+           hover:after:opacity-100
+           after:bg-gradient-to-r
+           after:from-transparent
+           after:via-white/10
+           after:to-transparent;
+  }
 }
 
 .ficon:hover {

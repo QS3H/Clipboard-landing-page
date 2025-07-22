@@ -1,0 +1,24 @@
+/* Dark mode specific styles */
+.dark img[src*="logo.svg"] {
+  filter: brightness(0) invert(1);
+}
+
+.dark img[src*="icon-"] {
+  filter: brightness(0) invert(0.8);
+}
+
+/* Improve contrast for text on dark backgrounds */
+.dark .section-paragraph {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Add subtle dark mode card effect */
+.dark .feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
