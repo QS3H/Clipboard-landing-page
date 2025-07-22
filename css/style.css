@@ -748,6 +748,21 @@ h3 {
   margin-bottom: 11rem;
 }
 
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.my-28 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.my-36 {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
 .mb-40 {
   margin-bottom: 10rem;
 }
@@ -1026,9 +1041,23 @@ body {
     brightness(101%) contrast(94%);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36em) {
   body {
     background-image: url("../images/bg-header-mobile.png");
+  }
+}
+
+/* Reduced motion support */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    -webkit-animation-duration: 0.001ms !important;
+            animation-duration: 0.001ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
   }
 }
 

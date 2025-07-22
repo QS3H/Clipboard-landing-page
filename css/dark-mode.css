@@ -9,13 +9,13 @@
 
 /* Improve contrast for text on dark backgrounds */
 .dark .section-paragraph {
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-dark-text, rgba(255, 255, 255, 0.87));
 }
 
 /* Add subtle dark mode card effect */
 .dark .feature-card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.625rem);
 }
 
 /* Smooth transitions */

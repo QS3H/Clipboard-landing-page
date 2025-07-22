@@ -24,15 +24,15 @@ body {
 
 @layer components {
   .transition-theme {
-    @apply transition-all duration-300 ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.5s ease-in forwards;
+    /* Removed unknown animation: fadeIn */
   }
 
   .animate-slide-in {
-    animation: slideIn 0.5s ease-out forwards;
+    /* Removed unknown animation: slideIn */
   }
 
   /* Button Directives */
@@ -120,8 +120,19 @@ body {
     brightness(101%) contrast(94%);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36em) {
   body {
     background-image: url("../images/bg-header-mobile.png");
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
