@@ -18,221 +18,239 @@
     <script src="js/main.js" defer></script>
   </head>
   <body class="dark:bg-dark-bg transition-colors duration-300">
-    <!-- Hero Section -->
-    <section id="hero-section">
-      <div class="section-container mb-40 pt-16 dark:text-dark-text">
-        <img src="images/logo.svg" alt="Clipboard logo" class="my-16 mx-auto" />
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-section">
+        <div class="section-container mb-40 pt-16 dark:text-dark-text">
+          <img
+            src="images/logo.svg"
+            alt="Clipboard logo"
+            class="my-16 mx-auto"
+          />
 
-        <div class="fixed top-4 right-4 z-50">
-          <button
-            id="theme-toggle"
-            class="p-2 rounded-full bg-gray/20 hover:bg-gray/30 transition-colors"
-          >
-            <!-- Sun icon -->
-            <svg
-              id="sun-icon"
-              class="w-6 h-6 hidden"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+          <div class="absolute top-4 right-4 z-50">
+            <button
+              type="button"
+              id="theme-toggle"
+              class="p-2 rounded-full bg-gray/20 hover:bg-gray/30 transition-colors"
+              aria-label="Toggle dark mode"
             >
-              <path
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-              />
-            </svg>
-            <!-- Moon icon -->
-            <svg
-              id="moon-icon"
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <h2>A history of everything you copy</h2>
-        <p class="section-paragraph text-2xl mb-10 dark:text-dark-secondary">
-          Clipboard allows you to track and organize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
-
-        <div class="button-container">
-          <a
-            href="https://www.frontendmentor.io/profile/QS3H"
-            target="_blank"
-            class="btn-primary btn-hover-effect"
-            >Download for iOS</a
-          >
-          <a
-            href="https://github.com/QS3H"
-            target="_blank"
-            class="btn-secondary btn-hover-effect"
-            >Download for Mac</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Snippets Section -->
-    <section id="snippets-section">
-      <div class="section-container my-20 dark:text-dark-text">
-        <h2>Keep track of your snippets</h2>
-        <p class="section-paragraph mb-24 dark:text-dark-secondary">
-          Clipboard instantly stores any item you copy in the cloud, meaning you
-          can access your snippets immediately on all your devices. our Mac and
-          iOS apps will help you organize everything.
-        </p>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features-section">
-      <div class="section-container my-20 dark:text-dark-text">
-        <div class="flex flex-col md:space-x-32 md:flex-row relative">
-          <div class="md:w-1/2">
-            <img
-              class="top-0 right-[50%] md:absolute"
-              src="images/image-computer.png"
-              alt="Computer image"
-            />
+              <!-- Sun icon -->
+              <svg
+                id="sun-icon"
+                class="w-6 h-6 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                />
+              </svg>
+              <!-- Moon icon -->
+              <svg
+                id="moon-icon"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                />
+              </svg>
+            </button>
           </div>
 
+          <h1 class="text-4xl font-bold text-darkGray md:text-5xl mb-8">
+            A history of everything you copy
+          </h1>
+          <p class="section-paragraph text-2xl mb-10 dark:text-dark-secondary">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+
+          <div class="button-container">
+            <a
+              href="https://www.frontendmentor.io/profile/QS3H"
+              target="_blank"
+              class="btn-primary btn-hover-effect"
+              >Download for iOS</a
+            >
+            <a
+              href="https://github.com/QS3H"
+              target="_blank"
+              class="btn-secondary btn-hover-effect"
+              >Download for Mac</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Snippets Section -->
+      <section id="snippets-section">
+        <div class="section-container my-20 dark:text-dark-text">
+          <h2>Keep track of your snippets</h2>
+          <p class="section-paragraph mb-24 dark:text-dark-secondary">
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features-section">
+        <div class="section-container my-20 dark:text-dark-text">
+          <div class="flex flex-col md:space-x-32 md:flex-row relative">
+            <div class="md:w-1/2">
+              <img
+                class="top-0 right-[50%] md:absolute"
+                src="images/image-computer.png"
+                alt="Computer image"
+              />
+            </div>
+
+            <div
+              class="flex flex-col space-y-12 mt-16 text-xl mb-24 md:text-left md:mb-60 md:w-1/2 md:pl-16"
+            >
+              <div>
+                <h3>Quick Search</h3>
+                <p class="text-gray max-w-md">
+                  Easily search your snippets by content, category, web address,
+                  application, and more.
+                </p>
+              </div>
+
+              <div>
+                <h3>iCloud Sync</h3>
+                <p class="text-gray max-w-md">
+                  Instantly saves and syncs snippets across all your devices.
+                </p>
+              </div>
+
+              <div>
+                <h3>Complete History</h3>
+                <p class="text-gray max-w-md">
+                  Retrieve any snippets from the first moment you started using
+                  the app.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Access Section -->
+      <section id="access-section">
+        <div class="section-container my-20 dark:text-dark-text">
+          <h2>Access Clipboard Anywhere</h2>
+          <p class="section-paragraph mb-24 dark:text-dark-secondary">
+            Whether you're on the go, or at your Computer, you can access all
+            your clipboard snippets in a few simple clicks.
+          </p>
+          <img
+            class="mx-auto"
+            src="images/image-devices.png"
+            alt="devices image"
+          />
+        </div>
+      </section>
+
+      <!-- Supercharge Section -->
+      <section id="supercharge-section">
+        <div class="section-container my-20 dark:text-dark-text">
+          <h2>Supercharge your workflow</h2>
+          <p class="section-paragraph mb-16 dark:text-dark-secondary">
+            We've got the tools to boost your productivity.
+          </p>
           <div
-            class="flex flex-col space-y-12 mt-16 text-xl mb-24 md:text-left md:mb-60 md:w-1/2 md:pl-16"
+            class="flex space-y-16 items-center justify-between flex-col md:space-y-0 md:flex-row md:space-x-8"
           >
-            <div>
-              <h3>Quick Search</h3>
+            <div class="flex flex-col space-y-5 items-center">
+              <img
+                src="images/icon-blacklist.svg"
+                alt="blacklist icon"
+                class="mb-6"
+              />
+              <h3>Create Blacklists</h3>
               <p class="text-gray max-w-md">
-                Easily search your snippets by content, category, web address,
-                application, and more.
+                Prevent certain items from being saved to your clipboard.
               </p>
             </div>
 
-            <div>
-              <h3>iCloud Sync</h3>
+            <div class="flex flex-col space-y-5 items-center">
+              <img
+                src="images/icon-text.svg"
+                alt="blacklist icon"
+                class="mb-6"
+              />
+              <h3>Plain Text Snippets</h3>
               <p class="text-gray max-w-md">
-                Instantly saves and syncs snippets across all your devices.
+                Remove unwanted formatting from copied text for a cleaner look.
               </p>
             </div>
 
-            <div>
-              <h3>Complete History</h3>
+            <div class="flex flex-col space-y-5 items-center">
+              <img
+                src="images/icon-preview.svg"
+                alt="blacklist icon"
+                class="mb-6"
+              />
+              <h3>Sneak Preview</h3>
               <p class="text-gray max-w-md">
-                Retrieve any snippets from the first moment you started using
-                the app.
+                Quickly preview of all snippets on your Clipboard for easy
+                access.
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Access Section -->
-    <section id="access-section">
-      <div class="section-container my-20 dark:text-dark-text">
-        <h2>Access Clipboard Anywhere</h2>
-        <p class="section-paragraph mb-24 dark:text-dark-secondary">
-          Whether you're on the go, or at your Computer, you can access all your
-          clipboard snippets in a few simple clicks.
-        </p>
-        <img
-          class="mx-auto"
-          src="images/image-devices.png"
-          alt="devices image"
-        />
-      </div>
-    </section>
-
-    <!-- Supercharge Section -->
-    <section id="supercharge-section">
-      <div class="section-container my-20 dark:text-dark-text">
-        <h2>Supercharge your workflow</h2>
-        <p class="section-paragraph mb-16 dark:text-dark-secondary">
-          We've got the tools to boost your productivity.
-        </p>
+      <!-- References Section -->
+      <section id="references-section">
         <div
-          class="flex space-y-16 items-center justify-between flex-col md:space-y-0 md:flex-row md:space-x-8"
+          class="flex flex-col justify-between max-w-6xl mx-auto items-center my-44 space-y-16 md:space-y-0 md:flex-row md:space-mx-8"
         >
-          <div class="flex flex-col space-y-5 items-center">
-            <img
-              src="images/icon-blacklist.svg"
-              alt="blacklist icon"
-              class="mb-6"
-            />
-            <h3>Create Blacklists</h3>
-            <p class="text-gray max-w-md">
-              Prevent certain items from being saved to your clipboard.
-            </p>
-          </div>
+          <img src="images/logo-google.png" alt="google logo" />
+          <img src="images/logo-ibm.png" alt="ibm logo" />
+          <img src="images/logo-microsoft.png" alt="microsoft logo" />
+          <img src="images/logo-hp.png" alt="hp logo" />
+          <img
+            src="images/logo-vector-graphics.png"
+            alt="vector-graphics logo"
+          />
+        </div>
+      </section>
 
-          <div class="flex flex-col space-y-5 items-center">
-            <img src="images/icon-text.svg" alt="blacklist icon" class="mb-6" />
-            <h3>Plain Text Snippets</h3>
-            <p class="text-gray max-w-md">
-              Remove unwanted formatting from copied text for a cleaner look.
-            </p>
-          </div>
-
-          <div class="flex flex-col space-y-5 items-center">
-            <img
-              src="images/icon-preview.svg"
-              alt="blacklist icon"
-              class="mb-6"
-            />
-            <h3>Sneak Preview</h3>
-            <p class="text-gray max-w-md">
-              Quickly preview of all snippets on your Clipboard for easy access.
-            </p>
+      <!-- Bottom CTA Section -->
+      <section id="bottom-cta-section">
+        <div class="section-container my-20 dark:text-dark-text">
+          <h2>Clipboard for iOS and MacOS</h2>
+          <p class="section-paragraph mb-10 dark:text-dark-secondary">
+            Available for free on the App Store. Download for Mac or iOS today.
+          </p>
+          <div class="button-container">
+            <a
+              href="https://www.frontendmentor.io/profile/QS3H"
+              target="_blank"
+              class="btn-primary btn-hover-effect"
+              >Download for iOS</a
+            >
+            <a
+              href="https://github.com/QS3H"
+              target="_blank"
+              class="btn-secondary btn-hover-effect"
+              >Download for Mac</a
+            >
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- References Section -->
-    <section id="references-section">
-      <div
-        class="flex flex-col justify-between max-w-6xl mx-auto items-center my-44 space-y-16 md:space-y-0 md:flex-row md:space-mx-8"
-      >
-        <img src="images/logo-google.png" alt="google logo" />
-        <img src="images/logo-ibm.png" alt="ibm logo" />
-        <img src="images/logo-microsoft.png" alt="microsoft logo" />
-        <img src="images/logo-hp.png" alt="hp logo" />
-        <img src="images/logo-vector-graphics.png" alt="vector-graphics logo" />
-      </div>
-    </section>
-
-    <!-- Bottom CTA Section -->
-    <section id="bottom-cta-section">
-      <div class="section-container my-20 dark:text-dark-text">
-        <h2>Clipboard for iOS and MacOS</h2>
-        <p class="section-paragraph mb-10 dark:text-dark-secondary">
-          Available for free on the App Store. Download for Mac or iOS today.
-        </p>
-        <div class="button-container">
-          <a
-            href="https://www.frontendmentor.io/profile/QS3H"
-            target="_blank"
-            class="btn-primary btn-hover-effect"
-            >Download for iOS</a
-          >
-          <a
-            href="https://github.com/QS3H"
-            target="_blank"
-            class="btn-secondary btn-hover-effect"
-            >Download for Mac</a
-          >
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-lightGray dark:bg-dark-footer">
+    <footer class="bg-lightGray dark:bg-dark-footer py-16">
       <div class="section-container dark:text-dark-text">
         <div class="flex flex-col items-center justify-between md:flex-row">
-          <img src="images/logo.svg" alt="" class="scale-50" />
+          <img src="images/logo.svg" alt="Clipboard logo" class="w-[55px]" />
           <!-- Menus and Social Container -->
           <div
             class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue"
@@ -286,24 +304,48 @@
 
             <!-- Social Icons -->
             <div class="flex justify-between align-center w-32 py-1">
-              <a href="#"
-                ><img
+              <a
+                href="https://facebook.com"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="sr-only">Visit our Facebook page</span>
+                <img
                   src="images/icon-facebook.svg"
                   alt=""
                   class="duration-200 ficon"
-              /></a>
-              <a href="#"
-                ><img
+                  aria-hidden="true"
+                />
+              </a>
+              <a
+                href="https://twitter.com"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="sr-only">Follow us on Twitter</span>
+                <img
                   src="images/icon-twitter.svg"
                   alt=""
                   class="duration-200 ficon"
-              /></a>
-              <a href="#"
-                ><img
+                  aria-hidden="true"
+                />
+              </a>
+              <a
+                href="https://instagram.com"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="sr-only">Follow us on Instagram</span>
+                <img
                   src="images/icon-instagram.svg"
                   alt=""
                   class="duration-200 ficon"
-              /></a>
+                  aria-hidden="true"
+                />
+              </a>
             </div>
           </div>
         </div>
