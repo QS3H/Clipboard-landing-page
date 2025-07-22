@@ -22,16 +22,12 @@ body {
   @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
 }
 
-.section-content {
-  @apply max-w-3xl mx-auto leading-9 text-center text-gray;
-}
-
 .section-container {
   @apply max-w-6xl mx-auto text-center px-10;
 }
 
 .section-paragraph {
-  @apply mx-auto text-center leading-9 max-w-3xl text-xl mb-24 text-gray;
+  @apply mx-auto text-center leading-9 max-w-3xl text-xl text-gray;
 }
 
 .ficon:hover {
