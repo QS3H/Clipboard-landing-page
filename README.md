@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://www.frontendmentor.io/solutions/clipboard-landing-page-with-tailwindcss-and-custom-animations-tbK_9pKEUT)
+- Solution URL: [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/clipboard-landing-page-with-tailwindcss-and-custom-animations-tbK_9pKEUT)
 - Live Site URL: [Live Demo](https://qs3h.github.io/Clipboard-landing-page)
 
 ## My process
