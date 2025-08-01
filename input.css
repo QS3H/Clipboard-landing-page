@@ -27,14 +27,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  .animate-fade-in {
-    /* Removed unknown animation: fadeIn */
-  }
-
-  .animate-slide-in {
-    /* Removed unknown animation: slideIn */
-  }
-
   /* Button Directives */
   .btn-primary {
     @apply bg-green dark:bg-dark-accent-green
